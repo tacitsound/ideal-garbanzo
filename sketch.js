@@ -10,6 +10,7 @@ function draw() {
     vertex(20, 80);
     bezierVertex(430, 360, 234, 167, 130, 304);
       beginContour();
+        stroke(210, 0, 180);
         vertex(40, 50);
         vertex(100, 200);
         vertex(350, 280);
