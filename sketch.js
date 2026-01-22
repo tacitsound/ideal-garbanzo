@@ -3,7 +3,17 @@ function setup() {
 }
 
 function draw() {
-  background(220);
-  ellipse(mouseX, mouseY, 50, 50);
-  line(0, height/2, width, 0)
+  background(0);
+  beginShape();
+    strokeWeight(2)
+    stroke(256, 256, 256);
+    vertex(20, 80);
+    bezierVertex(430, 360, 234, 167, 130, 304);
+      beginContour();
+        vertex(40, 50);
+        vertex(100, 200);
+        vertex(350, 280);
+      endContour();
+  endShape();
+
 }
